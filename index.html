@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WibuNetwork MCPE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+    body {
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      overflow-x: hidden;
+    }
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero img {
+      max-width: 160px;
+      margin-bottom: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .ip-info {
+      font-size: 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 8px 16px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+      font-weight: bold;
+    }
+    .join-btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    .join-btn:hover {
+      background-color: #45a049;
+    }
+    .features {
+      padding: 60px 20px;
+      background-color: #1c1c1c;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: #2e2e2e;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #121212;
+      font-size: 14px;
+    }
+    .socials {
+      margin-top: 10px;
+    }
+    .socials a {
+      color: #4CAF50;
+      margin: 0 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .socials a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <img src="https://i.ibb.co/NgwSkp1y/20250329-120455.png" alt="WibuNetwork Logo">
+    <h1>Selamat Datang di WibuNetwork</h1>
+    <p>Server Minecraft Bedrock (MCPE 1.21+)</p>
+    <div class="ip-info">IP: wibumc.duckdns.org | Port: 19303</div>
+    <a href="minecraft://?addExternalServer=WibuNetwork%20|%20MCPE|wibumc.duckdns.org:19303">
+      <button class="join-btn">Join Sekarang</button>
+    </a>
+  </section>
+
+  <section class="features">
+    <div class="card">
+      <h2>Survival & PvP</h2>
+      <p>Mainkan mode survival klasik dengan fitur PvP yang menantang!</p>
+    </div>
+    <div class="card">
+      <h2>Fitur Lengkap</h2>
+      <p>Economy, Rank, Mining & banyak fitur menarik lainnya siap kamu jelajahi!</p>
+    </div>
+    <div class="card">
+      <h2>Dikelola oleh Ammecraft CH</h2>
+      <p>Update rutin dan konten seru bisa kamu temukan di YouTube & TikTok Ammecraft CH.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 WibuNetwork. All rights reserved.
+    <div class="ip-info">Server IP: wibumc.duckdns.org | Port: 19303</div>
+    <div class="socials">
+      <a href="https://youtube.com/@ammecraft?si=HUsHa309JZ7OoJqJ" target="_blank">YouTube</a>
+      <a href="https://www.tiktok.com/@ammecraft?_t=ZS-8vchG8dlAA6&_r=1" target="_blank">TikTok</a>
+      <a href="https://discord.gg/q32esQs3Fs" target="_blank">Discord</a>
+    </div>
+  </footer>
+
+</body>
+</html>
