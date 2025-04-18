@@ -45,21 +45,24 @@
       background: rgba(255, 255, 255, 0.1);
       padding: 8px 16px;
       border-radius: 8px;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
       font-weight: bold;
     }
-    .join-btn {
+    .join-btn, .vote-btn {
       background-color: #4CAF50;
       color: white;
-      padding: 15px 30px;
-      font-size: 18px;
+      padding: 12px 24px;
+      font-size: 16px;
       border: none;
       border-radius: 12px;
       cursor: pointer;
       transition: 0.3s;
       box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      margin: 5px;
+      text-decoration: none;
+      display: inline-block;
     }
-    .join-btn:hover {
+    .join-btn:hover, .vote-btn:hover {
       background-color: #45a049;
     }
     .features {
@@ -107,9 +110,8 @@
     <h1>Selamat Datang di WibuNetwork</h1>
     <p>Server Minecraft Bedrock (MCPE 1.21+)</p>
     <div class="ip-info">IP: wibumc.duckdns.org | Port: 19303</div>
-    <a href="minecraft://?addExternalServer=WibuNetwork%20|%20MCPE|wibumc.duckdns.org:19303">
-      <button class="join-btn">Join Sekarang</button>
-    </a>
+    <a href="minecraft://?addExternalServer=WibuNetwork%20|%20MCPE|wibumc.duckdns.org:19303" class="join-btn">Join Sekarang</a>
+    <a href="https://minecraftpocket-servers.com/server/130516/vote/" target="_blank" class="vote-btn">Vote Server</a>
   </section>
 
   <section class="features">
