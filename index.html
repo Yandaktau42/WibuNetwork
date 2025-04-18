@@ -45,8 +45,20 @@
       background: rgba(255, 255, 255, 0.1);
       padding: 8px 16px;
       border-radius: 8px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       font-weight: bold;
+    }
+    .status {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      padding: 6px 12px;
+      border-radius: 10px;
+    }
+    .online {
+      background-color: #4CAF50;
+    }
+    .offline {
+      background-color: #e74c3c;
     }
     .join-btn, .vote-btn {
       background-color: #4CAF50;
@@ -110,6 +122,7 @@
     <h1>Selamat Datang di WibuNetwork</h1>
     <p>Server Minecraft Bedrock (MCPE 1.21+)</p>
     <div class="ip-info">IP: wibumc.duckdns.org | Port: 19303</div>
+    <div id="server-status" class="status">Cek status...</div>
     <a href="minecraft://?addExternalServer=WibuNetwork%20|%20MCPE|wibumc.duckdns.org:19303" class="join-btn">Join Sekarang</a>
     <a href="https://minecraftpocket-servers.com/server/130516/vote/" target="_blank" class="vote-btn">Vote Server</a>
   </section>
@@ -138,6 +151,26 @@
       <a href="https://discord.gg/q32esQs3Fs" target="_blank">Discord</a>
     </div>
   </footer>
+
+  <script>
+    const statusDiv = document.getElementById("server-status");
+
+    fetch("https://api.mcsrvstat.us/bedrock/2/wibumc.duckdns.org:19303")
+      .then(response => response.json())
+      .then(data => {
+        if (data.online) {
+          statusDiv.textContent = "Server Online";
+          statusDiv.classList.add("online");
+        } else {
+          statusDiv.textContent = "Server Offline";
+          statusDiv.classList.add("offline");
+        }
+      })
+      .catch(error => {
+        statusDiv.textContent = "Status tidak bisa dicek";
+        statusDiv.classList.add("offline");
+      });
+  </script>
 
 </body>
 </html>
