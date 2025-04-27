@@ -104,21 +104,20 @@
     .socials a:hover {
       text-decoration: underline;
     }
+    .chibi-container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
     .chibi {
-      position: absolute;
-      width: 100px;
+      width: 60px; /* Smaller size */
       animation: float 4s ease-in-out infinite;
-      z-index: 1;
     }
     @keyframes float {
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-20px); }
     }
-    .chibi1 { top: 10px; left: 10px; }
-    .chibi2 { top: 10px; right: 10px; }
-    .chibi3 { bottom: 80px; left: 20px; }
-    .chibi4 { bottom: 80px; right: 20px; }
-    .chibi5 { bottom: 10px; left: 50%; transform: translateX(-50%); }
   </style>
 </head>
 <body>
@@ -146,13 +145,16 @@
       <h2>Dikelola Ammecraft CH</h2>
       <p>Update rutin dan konten seru di YouTube & TikTok Ammecraft CH.</p>
     </div>
-  <section>
-  <img src="https://i.ibb.co/ycmyP5X2/yourimage1.jpg" alt="Image 1">
-  <img src="https://i.ibb.co/RpyBHfqG/yourimage2.jpg" alt="Image 2">
-  <img src="https://i.ibb.co/G3CjSkWw/yourimage3.jpg" alt="Image 3">
-  <img src="https://i.ibb.co/c5j24dD/yourimage4.jpg" alt="Image 4">
-  <img src="https://i.ibb.co/V0QBr3L4/yourimage5.jpg" alt="Image 5">
-</section>
+  </section>
+
+  <!-- Chibi images aligned horizontally -->
+  <section class="chibi-container">
+    <img src="https://i.ibb.co/ycmyP5X2" alt="Chibi 1" class="chibi">
+    <img src="https://i.ibb.co/RpyBHfqG" alt="Chibi 2" class="chibi">
+    <img src="https://i.ibb.co/G3CjSkWw" alt="Chibi 3" class="chibi">
+    <img src="https://i.ibb.co/c5j24dD" alt="Chibi 4" class="chibi">
+    <img src="https://i.ibb.co/V0QBr3L4" alt="Chibi 5" class="chibi">
+  </section>
 
   <footer>
     &copy; 2025 WibuNetwork. All rights reserved.
@@ -163,7 +165,7 @@
       <a href="https://discord.gg/q32esQs3Fs" target="_blank">Discord</a>
     </div>
   </footer>
-  
+
   <script>
     const statusDiv = document.getElementById("server-status");
 
