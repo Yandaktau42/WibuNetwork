@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="id">
+<!DOCTYPE html>
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -120,7 +121,8 @@
     .chibi5 { bottom: 10px; left: 50%; transform: translateX(-50%); }
   </style>
 </head>
-<body>  <div class="hero">
+<body>
+  <div class="hero">
     <img src="https://i.ibb.co/NgwSkp1y/20250329-120455.png" class="logo" alt="WibuNetwork Logo">
     <h1>Selamat Datang di WibuNetwork</h1>
     <p>Server Minecraft Bedrock (MCPE 1.21+)</p>
@@ -130,7 +132,8 @@
       <a href="minecraft://?addExternalServer=WibuNetwork%20|%20MCPE|wibumc.duckdns.org:19303">Join Sekarang</a>
       <a href="https://minecraftpocket-servers.com/server/130516/vote/" target="_blank">Vote Server</a>
     </div>
-  </div>  <section class="features">
+  </div>
+  <section class="features">
     <div class="card">
       <h2>Survival & PvP</h2>
       <p>Mainkan mode survival klasik dengan fitur PvP yang menantang!</p>
@@ -143,7 +146,18 @@
       <h2>Dikelola Ammecraft CH</h2>
       <p>Update rutin dan konten seru di YouTube & TikTok Ammecraft CH.</p>
     </div>
-  </section>  <footer>
+  </section>
+  
+  <!-- Inserted images -->
+  <section>
+    <img src="https://ibb.co/ycmyP5X2" alt="Image 1">
+    <img src="https://ibb.co/RpyBHfqG" alt="Image 2">
+    <img src="https://ibb.co/G3CjSkWw" alt="Image 3">
+    <img src="https://ibb.co/c5j24dD" alt="Image 4">
+    <img src="https://ibb.co/V0QBr3L4" alt="Image 5">
+  </section>
+
+  <footer>
     &copy; 2025 WibuNetwork. All rights reserved.
     <div class="ip-info">Server IP: wibumc.duckdns.org | Port: 19303</div>
     <div class="socials">
@@ -151,11 +165,9 @@
       <a href="https://www.tiktok.com/@ammecraft?_t=ZS-8vchG8dlAA6&_r=1" target="_blank">TikTok</a>
       <a href="https://discord.gg/q32esQs3Fs" target="_blank">Discord</a>
     </div>
-  </footer>  <img src="/mnt/data/file-D7qcso17sEM3BdEwt4Q1wj" class="chibi chibi1" alt="chibi1">
-  <img src="/mnt/data/file-YZtmCuQmZxfwpnvjvDvzK2" class="chibi chibi2" alt="chibi2">
-  <img src="/mnt/data/file-6N4fibvBKUWWJ3XQZfehTr" class="chibi chibi3" alt="chibi3">
-  <img src="/mnt/data/file-GCu4rjV5G4pNnC7Jz5rsE7" class="chibi chibi4" alt="chibi4">
-  <img src="/mnt/data/file-6TUvR8qi7E2ZbKcVa4imwf" class="chibi chibi5" alt="chibi5">  <script>
+  </footer>
+  
+  <script>
     const statusDiv = document.getElementById("server-status");
 
     fetch("https://api.mcsrvstat.us/bedrock/2/wibumc.duckdns.org:19303")
@@ -173,5 +185,6 @@
         statusDiv.textContent = "Status tidak bisa dicek";
         statusDiv.classList.add("offline");
       });
-  </script></body>
-        </html>
+  </script>
+</body>
+</html>
